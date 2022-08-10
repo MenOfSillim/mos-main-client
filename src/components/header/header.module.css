@@ -1,6 +1,8 @@
 .header {
     display: flex;
-    height: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
     padding: 0.8em 1em;
     background: black;
     color: white;    
@@ -10,6 +12,11 @@
     display: flex;
     align-items: center;
     margin-right: 1em;
+}
+
+.img {
+    margin-top: 6em;
+    width: 12em;
 }
 
 .input {
@@ -26,4 +33,16 @@
 .buttonImg {
     padding: 0.5em 0.2em;
     height: 100%;
+}
+
+.nav {
+    width: 40%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    text-align: center;
+    font-size: 45px;
 }
