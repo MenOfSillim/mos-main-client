@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@800&display=swap');
+
 .header {
     display: flex;
     justify-content: space-between;
+    font-family: 'Assistant', sans-serif;
     align-items: center;
     height: 5rem;
     padding: 0.8em 1em;
