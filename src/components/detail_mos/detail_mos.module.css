@@ -1,0 +1,22 @@
+.detail {
+    background: url("../../../public/images/banner.png") no-repeat center;
+    height: 86.2vh;
+    width: 100%;
+    background-size: cover;
+  }
+
+.skin {
+    width: 100px;
+    height: 180px;
+    border: 1px solid black;
+}
+
+.skinKellogg {
+    background: url("../../../public/images/skins/kellogg.png") no-repeat center;
+    background-size: cover;
+}
+
+/* .description {
+    white-space: pre-wrap;
+  } */
+  

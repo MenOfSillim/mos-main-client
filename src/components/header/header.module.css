@@ -5,7 +5,7 @@
     justify-content: space-between;
     font-family: 'Assistant', sans-serif;
     align-items: center;
-    height: 5rem;
+    height: 10vh;
     padding: 0.8em 1em;
     background: black;
     color: white;    
@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     margin-right: 1em;
+    z-index: 0;
 }
 
 .img {
@@ -39,7 +40,7 @@
 }
 
 .nav {
-    width: 40%;
+    width: 35%;
     margin-right: 3%;
     display: flex;
     justify-content: space-between;
