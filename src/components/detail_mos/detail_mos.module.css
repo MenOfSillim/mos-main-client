@@ -1,8 +1,8 @@
 .detail {
     background: url("../../../public/images/banner.png") no-repeat center;
     height: 86.2vh;
-    width: 100%;
-    background-size: cover;
+    /* width: 100%; */
+    background-size: contain;
   }
 
 .skin {

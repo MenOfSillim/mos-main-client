@@ -47,6 +47,7 @@
 }
 
 .menu {
-    text-align: center;
-    font-size: 45px;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
 }

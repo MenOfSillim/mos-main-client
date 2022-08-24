@@ -8,9 +8,9 @@ const Header = () => (
         </div>
         {/* <img className={styles.buttonImg} src="/images/search.png" alt="" /> */}
         <div className={styles.nav}>
-            <div className={styles.menu}>MOS</div>
-            <div className={styles.menu}>WORKS</div>
-            <div className={styles.menu}>CONTACT</div>
+            <div><a className={styles.menu} href="/mos">MOS</a></div>
+            <div><a className={styles.menu} href="/works">WORKS</a></div>
+            <div><a className={styles.menu} href="/works">CONTACT</a></div>
         </div>
     </header>    
     );
