@@ -1,0 +1,10 @@
+.detail {
+    background: url("../../../public/images/banner.png") no-repeat center;
+    height: 86.2vh;
+    /* width: 100%; */
+    background-size: contain;
+  }
+
+.detail > div {
+    height: 60vh;
+}
