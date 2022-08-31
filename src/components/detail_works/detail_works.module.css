@@ -3,8 +3,12 @@
     height: 86.2vh;
     /* width: 100%; */
     background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
 .detail > div {
+    margin: 4% 0px 0px 0px;
     height: 60vh;
 }

@@ -9,7 +9,7 @@ const DetailWorks = () => {
 
     return (
         <div className={styles.detail}>
-            <SimpleSlider />
+            <SimpleSlider className={styles.slider}/>
         </div>
     );
 }

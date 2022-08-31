@@ -7,6 +7,7 @@ import styled from "styled-components";
 
 const SimpleSlider = () => {
     const settings = {
+        arrows: false,
         dots: false,
         infinite: true,
         speed: 500,
@@ -19,26 +20,33 @@ const SimpleSlider = () => {
       width: 100%;
       height: 100%;
       & div {
-        width: 30vw;
-        height: 30vw;
+        width: 25vw;
+        height: 25vw;
       }
     `;
 
     return (
-        <div>
-            <h2>Single Item</h2>
-            <Slider {...settings}>
+        <div className={styles.container}>
+           <Slider className={styles.slider} {...settings}>
                 <Div>
-                    <div className={`${styles.frame} ${styles.pcria}`} />
+                    <a href="https://pcria.menofsillim.club/">
+                        <div className={`${styles.frame} ${styles.pcria}`} />
+                    </a>
                 </Div>
                 <Div>
-                    <div className={`${styles.frame} ${styles.findyourperfume}`} />
+                    <a href="https://findyourperfume.menofsillim.club/">
+                        <div className={`${styles.frame} ${styles.findyourperfume}`} />
+                    </a>
                 </Div>
                 <Div>
-                    <div className={`${styles.frame} ${styles.youtube}`} />
+                    <a href="https://youtube.menofsillim.club/">
+                        <div className={`${styles.frame} ${styles.youtube}`} />
+                    </a>
                 </Div>
                 <Div>
-                    <div className={`${styles.frame} ${styles.dashboard}`} />
+                    {/* <a href="https://pcria.menofsillim.club/"> */}
+                        <div className={`${styles.frame} ${styles.dashboard}`} />
+                    {/* </a> */}
                 </Div>
             </Slider>
         </div>

@@ -5,11 +5,13 @@
   } */
 
 .frame {
+    margin-left: 12%;
     width: 200px;
     height: 200px;
     border-radius: 20%;
     border: 1px solid black;
 }
+
 
 .pcria {
     background: url("../../../public/images/portfolios/pcria_banner.png") no-repeat center;
