@@ -7,8 +7,8 @@ import styled from "styled-components";
 
 const SimpleSlider = () => {
     const settings = {
-        arrows: false,
-        dots: false,
+        arrows: true,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -17,31 +17,28 @@ const SimpleSlider = () => {
       };
     
     const Div = styled.div`
-      width: 100%;
-      height: 100%;
-      & div {
+      div {
         width: 25vw;
         height: 25vw;
       }
     `;
 
+    const moveToUrl = (url) => {
+        console.log(`${url}`);
+        window.location.replace(`${url}`);
+    };
+
     return (
         <div className={styles.container}>
            <Slider className={styles.slider} {...settings}>
                 <Div>
-                    <a href="https://pcria.menofsillim.club/">
-                        <div className={`${styles.frame} ${styles.pcria}`} />
-                    </a>
+                    <div className={`${styles.frame} ${styles.pcria}`} onClick={()=>moveToUrl('https://pcria.menofsillim.club/')} />
                 </Div>
                 <Div>
-                    <a href="https://findyourperfume.menofsillim.club/">
-                        <div className={`${styles.frame} ${styles.findyourperfume}`} />
-                    </a>
+                    <div className={`${styles.frame} ${styles.findyourperfume}`} onClick={()=>moveToUrl('https://findyourperfume.menofsillim.club/')} />
                 </Div>
                 <Div>
-                    <a href="https://youtube.menofsillim.club/">
-                        <div className={`${styles.frame} ${styles.youtube}`} />
-                    </a>
+                    <div className={`${styles.frame} ${styles.youtube}`} onClick={()=>moveToUrl('https://youtube.menofsillim.club/')} />
                 </Div>
                 <Div>
                     {/* <a href="https://pcria.menofsillim.club/"> */}

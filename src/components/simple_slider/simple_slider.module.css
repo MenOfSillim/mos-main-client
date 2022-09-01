@@ -12,6 +12,9 @@
     border: 1px solid black;
 }
 
+.frame:hover {
+    cursor: pointer;
+}
 
 .pcria {
     background: url("../../../public/images/portfolios/pcria_banner.png") no-repeat center;
