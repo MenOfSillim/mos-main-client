@@ -10,7 +10,7 @@ const Header = () => (
         <div className={styles.nav}>
             <div><a className={styles.menu} href="/mos">MOS</a></div>
             <div><a className={styles.menu} href="/works">WORKS</a></div>
-            <div><a className={styles.menu} href="/works">CONTACT</a></div>
+            <div><a className={styles.menu} href="/contact">CONTACT</a></div>
         </div>
     </header>    
     );
