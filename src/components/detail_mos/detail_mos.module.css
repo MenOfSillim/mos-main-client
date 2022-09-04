@@ -1,8 +1,8 @@
 .detail {
-    background: url("../../../public/images/banner.png") no-repeat center;
-    height: 86.2vh;
+    /* height: 100vh; */
+    background: url("../../../public/images/background_mos.png") no-repeat 50% 60%;
     /* width: 100%; */
-    background-size: contain;
+    background-size: 140%;
   }
 
 .skin {
