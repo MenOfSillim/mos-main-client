@@ -39,5 +39,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "https://script.google.com/macros/s/AKfycbyf-5RP8bbXfo03w93s3dnvXyQaNHnkZXnj1qFvbVfizCrEkJvuB8dnZwB9wij7Ovp-RQ/exec"
 }

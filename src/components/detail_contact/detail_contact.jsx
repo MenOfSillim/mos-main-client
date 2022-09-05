@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React from 'react';
 import { useRef } from 'react';
 import styles from "./detail_contact.module.css";
@@ -21,16 +22,33 @@ const DetailContact = () => {
         formRef.current.reset();
         console.log(mail);
 
-        
+        try {
+            //응답 성공 
+            const response = axios.post('https://script.google.com/macros/s/AKfycbyf-5RP8bbXfo03w93s3dnvXyQaNHnkZXnj1qFvbVfizCrEkJvuB8dnZwB9wij7Ovp-RQ/exec',
+                  //보내고자 하는 데이터 
+                JSON.stringify({
+                    name: nameRef.current.value || '',
+                    phone: phoneRef.current.value || '',
+                    email: emailRef.current.value || '',
+                    message: messageRef.current.value || '',
+                })
+            );
+            console.log(response);
+          } catch (error) {
+            //응답 실패
+            console.error(error);
+          }
       };
 
     return (
         // name, phone, email, message
         <div className={styles.form}>
             <div>
-                <form ref={formRef} className={styles.form}>
+                <form ref={formRef} className={styles.form} data-email="menofsillim@gmail.com">
+                {/* <form method="POST" data-email="menofsillim@gmail.com"
+                    action="https://script.google.com/macros/s/AKfycbyf-5RP8bbXfo03w93s3dnvXyQaNHnkZXnj1qFvbVfizCrEkJvuB8dnZwB9wij7Ovp-RQ/exec"> */}
                 <div>
-                    <label for="name">Name</label>
+                    <label htmlFor="name">Name</label>
                     <input
                     ref={nameRef}
                     className={styles.input}
@@ -40,7 +58,7 @@ const DetailContact = () => {
                     />
                 </div>
                 <div>
-                    <label for="phone">Phone</label>
+                    <label htmlFor="phone">Phone</label>
                     <input
                     ref={phoneRef}
                     className={styles.input}
@@ -50,7 +68,7 @@ const DetailContact = () => {
                     />
                 </div>
                 <div>
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input
                     ref={emailRef}
                     className={styles.input}
@@ -60,7 +78,7 @@ const DetailContact = () => {
                     />
                 </div>
                 <div>
-                    <label for="message">Message</label>
+                    <label htmlFor="message">Message</label>
                     <textarea
                     ref={messageRef}
                     className={styles.textarea}
@@ -68,7 +86,7 @@ const DetailContact = () => {
                     placeholder="Message"
                     />
                 </div>
-                
+                {/* <button type="submit">submit</button> */}
                 <button onClick={onSubmit}>submit</button>
             </form>
         </div>

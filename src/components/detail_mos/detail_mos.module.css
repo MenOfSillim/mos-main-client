@@ -1,8 +1,9 @@
 .detail {
-    /* height: 100vh; */
-    background: url("../../../public/images/background_mos.png") no-repeat 50% 60%;
+    height: 86.6vh;
+    background: url("../../../public/images/background_mos.png") no-repeat center;
     /* width: 100%; */
     background-size: 140%;
+    display: flex;
   }
 
 .skin {

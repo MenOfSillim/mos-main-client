@@ -9,11 +9,11 @@ const DetailMos = () => {
 
   return (
     <div className={styles.detail}>
-    <div className={`${styles.skin} ${styles.skinKellogg}`}></div>
-    <div className={`${styles.skin} ${styles.skinRubok}`}></div>
-    <div className={`${styles.skin} ${styles.skinDavid}`}></div>
-    <div className={`${styles.skin} ${styles.skinLeo}`}></div>
-  </div>
+      <div className={`${styles.skin} ${styles.skinKellogg}`}></div>
+      <div className={`${styles.skin} ${styles.skinRubok}`}></div>
+      <div className={`${styles.skin} ${styles.skinDavid}`}></div>
+      <div className={`${styles.skin} ${styles.skinLeo}`}></div>
+    </div>
   )
 };
 
