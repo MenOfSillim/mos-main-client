@@ -43,8 +43,9 @@ const DetailContact = () => {
     return (
         // name, phone, email, message
         <div className={styles.form}>
-            <div>
-                <form ref={formRef} className={styles.form} data-email="menofsillim@gmail.com">
+            <div className={styles.contact}>
+                <div>Contact us</div>                
+                <form ref={formRef} className={styles.form} data-email="kyondoku@gmail.com">
                 {/* <form method="POST" data-email="menofsillim@gmail.com"
                     action="https://script.google.com/macros/s/AKfycbyf-5RP8bbXfo03w93s3dnvXyQaNHnkZXnj1qFvbVfizCrEkJvuB8dnZwB9wij7Ovp-RQ/exec"> */}
                 <div>
