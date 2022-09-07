@@ -44,51 +44,59 @@ const DetailContact = () => {
         // name, phone, email, message
         <div className={styles.form}>
             <div className={styles.contact}>
-                <div>Contact us</div>                
+                <div className={styles.contactTitle}>Contact us</div>                
                 <form ref={formRef} className={styles.form} data-email="kyondoku@gmail.com">
                 {/* <form method="POST" data-email="menofsillim@gmail.com"
                     action="https://script.google.com/macros/s/AKfycbyf-5RP8bbXfo03w93s3dnvXyQaNHnkZXnj1qFvbVfizCrEkJvuB8dnZwB9wij7Ovp-RQ/exec"> */}
-                <div>
-                    <label htmlFor="name">Name</label>
-                    <input
-                    ref={nameRef}
-                    className={styles.input}
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                    />
+                
+                <div className={styles.inputContainer}>
+                    <div className={styles.namePhone}>
+                        <div class>
+                            <label className={styles.label} htmlFor="name">Name</label>
+                            <input
+                            ref={nameRef}
+                            className={styles.input}
+                            type="text"
+                            name="name"
+                            placeholder="Name"
+                            />
+                        </div>
+                        <div>
+                            <label className={styles.label}  htmlFor="phone">Phone</label>
+                            <input
+                            ref={phoneRef}
+                            className={styles.input}
+                            type="text"
+                            name="phone"
+                            placeholder="Phone"
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <label className={styles.label}   htmlFor="email">Email</label>
+                        <input
+                        ref={emailRef}
+                        className={`${styles.input} ${styles.inputEmail}`}
+                        type="text"
+                        name="email"
+                        placeholder="Email"
+                        />
+                    </div>
+                    <div className={styles.textareaContainer}>
+                        <label className={styles.label}   htmlFor="message">Message</label>
+                        <textarea
+                        ref={messageRef}
+                        className={styles.textarea}
+                        name="message"
+                        placeholder="Message"
+                        />
+                    </div>
                 </div>
-                <div>
-                    <label htmlFor="phone">Phone</label>
-                    <input
-                    ref={phoneRef}
-                    className={styles.input}
-                    type="text"
-                    name="phone"
-                    placeholder="Phone"
-                    />
+                <div className={styles.submitContainer}>
+                    {/* <button type="submit">submit</button> */}
+                    {/* <button onClick={onSubmit}>submit</button> */}
+                    <div className={styles.submit} onClick={onSubmit}>Submit</div>
                 </div>
-                <div>
-                    <label htmlFor="email">Email</label>
-                    <input
-                    ref={emailRef}
-                    className={styles.input}
-                    type="text"
-                    name="email"
-                    placeholder="Email"
-                    />
-                </div>
-                <div>
-                    <label htmlFor="message">Message</label>
-                    <textarea
-                    ref={messageRef}
-                    className={styles.textarea}
-                    name="message"
-                    placeholder="Message"
-                    />
-                </div>
-                {/* <button type="submit">submit</button> */}
-                <button onClick={onSubmit}>submit</button>
             </form>
         </div>
       </div>
