@@ -18,6 +18,10 @@
     z-index: 0;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 .img {
     margin-top: 6em;
     width: 12em;

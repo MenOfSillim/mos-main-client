@@ -5,9 +5,6 @@ import styles from "./detail_mos.module.css";
 
 const DetailMos = () => {
 
-  // const navigate = useNavigate();
-  // navigate("/mos")
-
   const [position, setPosition] = useState({ x: 0, y: 0 }); // box의 포지션 값
   // 업데이트 되는 값을 set 해줌
   const trackPos = (data) => {
