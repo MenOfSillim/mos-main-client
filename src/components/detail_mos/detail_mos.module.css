@@ -7,17 +7,52 @@
   }
 
 .skin {
-    width: 100px;
-    height: 180px;
-    border: 1px solid black;
+    width: 280px;
+    height: 240px;
+    cursor: move;
+    position: absolute;
+    user-select: none;
+    /* border: 1px solid black; */
 }
 
 .skinKellogg {
-    background: url("../../../public/images/skins/kellogg.png") no-repeat center;
-    background-size: cover;
+    background: url("../../../public/images/skins/intro_kellogg.PNG") no-repeat center;
+    background-size: contain;
+    top: 30%;
+    left: 60%;
 }
 
+.skinRubok {
+    background: url("../../../public/images/skins/intro_rubok.PNG") no-repeat center;
+    background-size: contain;
+    top: 40%;
+    left: 30%;
+}
+
+.skinDavid {
+    background: url("../../../public/images/skins/intro_david.PNG") no-repeat center;
+    background-size: contain;
+    top: 60%;
+    left: 65%;
+}
+
+.skinLeo {
+    background: url("../../../public/images/skins/intro_leo.PNG") no-repeat center;
+    background-size: cover;
+    top: 60%;
+    left: 10%;
+}
 /* .description {
     white-space: pre-wrap;
   } */
   
+  .box {
+    position: absolute;
+    cursor: move;
+    color: black;
+    width: 100px;
+    border-radius: 5px;
+    padding: 1em;
+    margin: auto;
+    background: lightgrey;
+  }

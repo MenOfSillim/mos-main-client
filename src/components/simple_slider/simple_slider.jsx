@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const SimpleSlider = () => {
     const settings = {
-        arrows: true,
+        arrows: false,
         dots: true,
         infinite: true,
         speed: 500,

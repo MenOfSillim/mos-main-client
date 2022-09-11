@@ -1,8 +1,8 @@
 .detail {
-    background: url("../../../public/images/banner.png") no-repeat center;
-    height: 86.2vh;
+    background: url("../../../public/images/background_works.JPG") no-repeat center;
+    height: 86.6vh;
     /* width: 100%; */
-    background-size: contain;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
