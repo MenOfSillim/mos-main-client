@@ -1,0 +1,46 @@
+name : CI
+
+on:
+  push:
+    branches: [ main ]
+  # pull_request:
+  #  branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      ## git action 서버 설정
+      - uses: actions/checkout@v2
+
+      ## node cache 적용
+      - name: Cache node modules
+        id: node-cache
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-modules-
+
+      ## node 연관 dependency 설치
+      - name: Install Dependencies
+        run: npm install
+
+      - name : test
+        run : npm test
+
+      ## docker part
+      - name: Docker meta
+        id: docker_meta
+        uses: crazy-max/ghaction-docker-meta@v1
+        with:
+          images: teichae/node
+          tag-semver: |
+            {{version}}
+            {{major}}.{{minor}}
+            
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1    
