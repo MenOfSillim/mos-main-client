@@ -10,20 +10,22 @@ const DetailMos = () => {
   const trackPos = (data) => {
 	setPosition({ x: data.x, y: data.y }); 
   };
-
+  
+  const nodeRef = React.useRef(null);
+  
   return (
     <div className={styles.detail}>
-      <Draggable onDrag={(e, data) => trackPos(data)} >
-          <div className={`${styles.skin} ${styles.skinKellogg}`}></div>
+      <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
+          <div ref={nodeRef} className={`${styles.skin} ${styles.skinKellogg}`}></div>
       </Draggable>
-      <Draggable onDrag={(e, data) => trackPos(data)} >
-          <div className={`${styles.skin} ${styles.skinRubok}`}></div>
+      <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
+          <div ref={nodeRef} className={`${styles.skin} ${styles.skinRubok}`}></div>
       </Draggable>
-      <Draggable onDrag={(e, data) => trackPos(data)} >
-          <div className={`${styles.skin} ${styles.skinDavid}`}></div>
+      <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
+          <div ref={nodeRef} className={`${styles.skin} ${styles.skinDavid}`}></div>
       </Draggable>
-      <Draggable onDrag={(e, data) => trackPos(data)} >
-          <div className={`${styles.skin} ${styles.skinLeo}`}></div>
+      <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
+          <div ref={nodeRef} className={`${styles.skin} ${styles.skinLeo}`}></div>
       </Draggable>
     </div>
   )
