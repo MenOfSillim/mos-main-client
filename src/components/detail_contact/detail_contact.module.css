@@ -79,6 +79,12 @@
     background-color: #C2C2C1;
 }
 
+.submit:hover {
+    cursor: pointer;
+    background-color: #d3d3d3;
+    transition: 0.3s;
+}
+
 .namePhoneContainer {
     width: 467px;
     display: flex;
