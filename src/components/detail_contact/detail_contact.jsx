@@ -19,8 +19,10 @@ const DetailContact = () => {
           email: emailRef.current.value || '',
           message: messageRef.current.value || '',
         };
-        formRef.current.reset();
+        
         console.log(mail);
+
+        // return false;
 
         try {
             //응답 성공 
@@ -38,18 +40,19 @@ const DetailContact = () => {
             //응답 실패
             console.error(error);
           }
+
+          formRef.current.reset();
       };
 
     return (
         <div className={styles.detail}>
             {/* name, phone, email, message */}
+            <div className={styles.mosMessage}/>
             <div className={styles.form}>
                 <div className={styles.contact}>
                     <div className={styles.contactTitle}>Contact us</div>                
                     <form ref={formRef} className={styles.form} data-email="menofsillim@gmail.com">
-                    {/* <form method="POST" className={styles.form} data-email="menofsillim@gmail.com"
-                        action="https://script.google.com/macros/s/AKfycbyf-5RP8bbXfo03w93s3dnvXyQaNHnkZXnj1qFvbVfizCrEkJvuB8dnZwB9wij7Ovp-RQ/exec"> */}
-                    
+                    {/* <form method="POST" className={styles.form} data-email="menofsillim@gmail.com"> */}
                     <div className={styles.inputContainer}>
                         <div className={styles.namePhoneContainer}>
                             <div>

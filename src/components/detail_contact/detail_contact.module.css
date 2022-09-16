@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .detail {
-    background: url("../../../public/images/background_contact.JPG") no-repeat center;
+    background: url("../../../public/images/bg.png") no-repeat center;
     height: 86.6vh;
     /* width: 100%; */
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.mosMessage {
+    width: 60vh;
+    height: 45vh;
+    background: url("../../../public/images/were.png") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: 40vh;
+    left: 25vh;
 }
 
 .form {
@@ -20,8 +30,8 @@
 
 .contact {
     position: absolute;
-    top: 150px;
-    right: 180px;
+    top: 20%;
+    right: 10%;
     width: 550px;
     height: 530px;
     border: 3px solid black;

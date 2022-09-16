@@ -10,5 +10,6 @@
 
 .detail > div {
     /* margin: 4% 0px 0px 0px; */
+    padding-top: 10%;
     height: 60vh;
 }
