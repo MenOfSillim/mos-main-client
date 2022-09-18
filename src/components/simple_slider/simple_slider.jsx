@@ -55,6 +55,9 @@ const SimpleSlider = () => {
                     <div className={`${styles.frame} ${styles.youtube}`} onClick={()=>moveToUrl('https://youtube.menofsillim.club/')} />
                 </Div>
                 <Div>
+                    <div className={`${styles.frame} ${styles.cardmaker}`} onClick={()=>moveToUrl('https://cardmaker.menofsillim.club/')} />
+                </Div>
+                <Div>
                     <div className={`${styles.frame} ${styles.prometheus}`} onClick={()=>moveToUrl('http://192.168.0.16:30500/')} />
                 </Div>
                 <Div>
