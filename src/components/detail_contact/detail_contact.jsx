@@ -10,6 +10,7 @@ const DetailContact = () => {
     const emailRef = useRef();
     const messageRef = useRef();
 
+
     const onSubmit = event => {
         event.preventDefault();
         const mail = {
@@ -63,6 +64,7 @@ const DetailContact = () => {
                                 type="text"
                                 name="name"
                                 placeholder="Name"
+                                required
                                 />
                             </div>
                             <div>
@@ -84,6 +86,7 @@ const DetailContact = () => {
                             type="text"
                             name="email"
                             placeholder="Email"
+                            required
                             />
                         </div>
                         <div className={styles.textareaContainer}>
@@ -93,13 +96,14 @@ const DetailContact = () => {
                             className={styles.textarea}
                             name="message"
                             placeholder="Message"
+                            required
                             />
                         </div>
                     </div>
                     <div className={styles.submitContainer}>
                         {/* <button type="submit">submit</button> */}
                         {/* <button onClick={onSubmit}>submit</button> */}
-                        <div className={styles.submit} onClick={onSubmit}>Submit</div>
+                        <div type="submit" className={styles.submit} onClick={onSubmit}>Submit</div>
                     </div>
                 </form>
             </div>
