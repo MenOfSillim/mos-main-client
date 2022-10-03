@@ -12,6 +12,7 @@ RUN npm install slick-carousel
 RUN npm install react-router-dom
 RUN npm install styled-components
 RUN npm install react-scripts
+RUN npm install react-responsive
 
 
 ENTRYPOINT yarn start
