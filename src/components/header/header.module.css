@@ -40,20 +40,38 @@
     font-size: 40px;
 }
 
-/* Mobile */
+/* Tablet */
 
-.hamburger {
-    margin-left: 2%;
-}
-
-.moImg {
+.taImg {
     width: 50px;
     border: 3px solid white;
     border-radius: 50%;
 }
 
-.moNav {
+.taNav {
     width: 300px;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.taMenu {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin-left: 15%;
+}
+
+/* Mobile */
+
+.moImg {
+    width: 20px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.moNav {
+    width: 200px;
     margin-right: 5%;
     display: flex;
     justify-content: space-between;
@@ -62,6 +80,6 @@
 .moMenu {
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 15%;
 }
