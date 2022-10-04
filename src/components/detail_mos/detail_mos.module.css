@@ -46,7 +46,7 @@
     white-space: pre-wrap;
   } */
   
-  .box {
+.box {
     position: absolute;
     cursor: move;
     color: black;
@@ -55,4 +55,40 @@
     padding: 1em;
     margin: auto;
     background: lightgrey;
-  }
+}
+
+/* Tablet */
+.taDetail {
+    height: 86.6vh;
+    background: url("../../../public/images/background_mos.png") no-repeat center;
+    /* width: 100%; */
+    background-size: 140%;
+    display: flex;
+}
+
+.taSkin {
+    width: 200px;
+    height: 170px;
+    cursor: move;
+    position: absolute;
+    user-select: none;
+    /* border: 1px solid black; */
+} 
+
+/* Mobile */
+.moDetail {
+    height: 86.6vh;
+    background: url("../../../public/images/background_mos.png") no-repeat center;
+    /* width: 100%; */
+    background-size: 140%;
+    display: flex;
+}
+
+.moSkin {
+    width: 160px;
+    height: 140px;
+    cursor: move;
+    position: absolute;
+    user-select: none;
+    /* border: 1px solid black; */
+} 
