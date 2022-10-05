@@ -21,13 +21,31 @@ const SimpleSlider = () => {
         arrows: false,
         dots: false,
         infinite: true,
-        speed: 100,
+        speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
         centerPadding: '20px',
         touchThreshold : 100,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [ // 반응형 웹 구현 옵션
+					// {  
+					// 	breakpoint: 960, //화면 사이즈 960px
+					// 	settings: {
+					// 		//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+					// 		slidesToShow:3 
+					// 	} 
+					// },
+					{ 
+						breakpoint: 768, //화면 사이즈 768px
+						settings: {	
+							//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+							slidesToShow: 2 
+						} 
+					}
+				    ],
         beforeChange: handleBeforeChange,
-        afterChange: handleAfterChange
+        afterChange: handleAfterChange,
       };
     
     const Div = styled.div`
