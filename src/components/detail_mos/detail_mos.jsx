@@ -42,6 +42,9 @@ const DetailMos = () => {
         <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
             <div ref={nodeRef} className={`${styles.skin} ${styles.skinLeo}`}></div>
         </Draggable>
+        <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
+            <div ref={nodeRef}></div>
+        </Draggable>
       </div>
     }
     { isTablet &&
@@ -58,6 +61,9 @@ const DetailMos = () => {
         <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
             <div ref={nodeRef} className={`${styles.taSkin} ${styles.skinLeo}`}></div>
         </Draggable>
+        <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
+            <div ref={nodeRef}></div>
+        </Draggable>
       </div>
     }
     { isMobile &&
@@ -73,6 +79,9 @@ const DetailMos = () => {
         </Draggable>
         <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
             <div ref={nodeRef} className={`${styles.moSkin} ${styles.skinLeo}`}></div>
+        </Draggable>
+        <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
+            <div ref={nodeRef}></div>
         </Draggable>
       </div>
     }
