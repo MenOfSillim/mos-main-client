@@ -16,8 +16,8 @@
     background: url("../../../public/images/were.png") no-repeat center;
     background-size: contain;
     position: absolute;
-    top: 40vh;
-    left: 25vh;
+    top: 40%;
+    left: 10%;
 }
 
 .form {
@@ -141,6 +141,139 @@
 .textarea {
     width: 444px;
     height: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #656566;
+    box-shadow: 0.2px 0.2px 0.2px 0.2px darkgray;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+
+/* Tablet */
+
+.taContact {
+    width: 550px;
+    height: 530px;
+    border: 3px solid black;
+    border-radius: 1.5%;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mobile */ 
+
+.moContact {
+    position: absolute;
+    top: 20%;
+    /* right: 10%; */
+    width: 320px;
+    height: 500px;
+    border: 3px solid black;
+    border-radius: 1.5%;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+}
+
+.moContactTitle {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 32px;
+    height: 32px;
+    font-weight: bold;
+    padding: 3% 0;
+}
+
+.moInputContainer {
+    background-color: #26313D;
+    width: 300px;
+    height: 374px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moSubmitContainer {
+    background-color: black;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moSubmit {
+    width: 270px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #C2C2C1;
+}
+
+.moSubmit:hover {
+    cursor: pointer;
+    background-color: #d3d3d3;
+    transition: 0.3s;
+}
+
+.moNamePhoneContainer {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.moNamePhoneContainer > div {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+}
+
+.moLabel {
+    display: inline-block;
+    color: white;
+    width: 50px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.moInput {
+    background-color: #656566;
+    color: white;
+    width: 190px;
+    height: 24px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+
+.moInputEmail {
+    width: 190px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.moEmailContainer {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.moTextareaContainer {
+    width: 200px;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.moTextarea {
+    width: 175px;
+    height: 100px;
     margin-top: 10px;
     padding: 10px;
     color: white;
