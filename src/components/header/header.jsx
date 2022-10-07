@@ -9,7 +9,7 @@ const Header = () => {
     });
 
     const isTablet = useMediaQuery({
-        query : "(min-width: 768px) and (max-width: 1024px)"
+        query : "(min-width: 768px) and (max-width: 1023px)"
     });
 
     const isMobile = useMediaQuery({
