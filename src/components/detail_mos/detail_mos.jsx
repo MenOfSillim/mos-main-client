@@ -69,16 +69,16 @@ const DetailMos = () => {
     { isMobile &&
       <div className={styles.moDetail}>
         <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
-            <div ref={nodeRef} className={`${styles.moSkin} ${styles.skinKellogg}`}></div>
+            <div ref={nodeRef} className={`${styles.moSkin} ${styles.moSkinKellogg}`}></div>
         </Draggable>
         <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
-            <div ref={nodeRef} className={`${styles.moSkin} ${styles.skinRubok}`}></div>
+            <div ref={nodeRef} className={`${styles.moSkin} ${styles.moSkinRubok}`}></div>
         </Draggable>
         <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
-            <div ref={nodeRef} className={`${styles.moSkin} ${styles.skinDavid}`}></div>
+            <div ref={nodeRef} className={`${styles.moSkin} ${styles.moSkinDavid}`}></div>
         </Draggable>
         <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
-            <div ref={nodeRef} className={`${styles.moSkin} ${styles.skinLeo}`}></div>
+            <div ref={nodeRef} className={`${styles.moSkin} ${styles.moSkinLeo}`}></div>
         </Draggable>
         <Draggable onDrag={(e, data) => trackPos(data)}  nodeRef={nodeRef}>
             <div ref={nodeRef}></div>

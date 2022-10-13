@@ -1,6 +1,8 @@
 .app {
   height: 100vh;
   background-color: #CCD669;
+  /* min-width: 480px; */
+  /* min-height: 320px; */
   /* background: url("../public/images/background_mos.png") no-repeat center;
   height: 100vh;
   width: 100%;

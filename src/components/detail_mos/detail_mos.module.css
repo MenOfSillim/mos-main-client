@@ -79,16 +79,44 @@
 .moDetail {
     height: 86.6vh;
     background: url("../../../public/images/background_mos.png") no-repeat center;
-    /* width: 100%; */
     background-size: 140%;
     display: flex;
 }
 
 .moSkin {
-    width: 160px;
-    height: 140px;
+    width: 110px;
+    height: 100px;
     cursor: move;
     position: absolute;
     user-select: none;
+    /* transform: rotate(90deg); */
     /* border: 1px solid black; */
 } 
+
+.moSkinKellogg {
+    background: url("../../../public/images/skins/intro_kellogg.PNG") no-repeat center;
+    background-size: contain;
+    top: 40%;
+    left: 50%;
+}
+
+.moSkinRubok {
+    background: url("../../../public/images/skins/intro_rubok.PNG") no-repeat center;
+    background-size: contain;
+    top: 50%;
+    left: 30%;
+}
+
+.moSkinDavid {
+    background: url("../../../public/images/skins/intro_david.PNG") no-repeat center;
+    background-size: contain;
+    top: 60%;
+    left: 60%;
+}
+
+.moSkinLeo {
+    background: url("../../../public/images/skins/intro_leo.PNG") no-repeat center;
+    background-size: cover;
+    top: 55%;
+    left: 10%;
+}
