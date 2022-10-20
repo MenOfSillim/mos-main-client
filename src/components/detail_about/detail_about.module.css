@@ -1,0 +1,97 @@
+.detail {
+    background-color: white;
+    margin-top: 13.3vh; 
+    /* height: 100%; */
+    border: solid #CCD669 50px;
+    font-family: 'Assistant', sans-serif;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* vertical-align: middle; */
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5%;
+}
+
+.intro {
+    /* position: absolute; */
+    /* top: 30%; */
+    /* width: 80%; */
+}
+
+.title {
+    margin: 80px 0 40px 0;
+    font-weight: 800;
+    font-size: 42px;
+}
+
+.subTitle {
+    margin: 40px 0 20px 3%;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.subContent {
+    margin: 0 0 20px 5%;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.subTitleStack {
+    width: 120px;
+    height: 40px;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.content {  
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.iconContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons > div {
+    width: 100px;
+    height: 100px;
+}
+
+.iconSlack {
+    background: url("../../../public/images/platforms/slack.png") no-repeat center;
+    background-size: contain;
+}
+
+.iconGithub {
+    background: url("../../../public/images/platforms/github-sign.png") no-repeat center;
+    background-size: contain;
+}
+
+.iconConfluence {
+    background: url("../../../public/images/platforms/confluence.png") no-repeat center;
+    background-size: contain;
+}
+
+.iconJira {
+    background: url("../../../public/images/platforms/jira.png") no-repeat center;
+    background-size: contain;
+}
+
+.iconDocker {
+    background: url("../../../public/images/platforms/docker.png") no-repeat center;
+    background-size: contain;
+}

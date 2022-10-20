@@ -1,11 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./detail_works.module.css";
+import styles from "./detail_project.module.css";
 import SimpleSlider from "../simple_slider/simple_slider";
 
-const DetailWorks = () => {
-    // const navigate = useNavigate();
-    // navigate("/works");
+const DetailProject = () => {
 
     return (
         <div className={styles.detail}>
@@ -16,4 +14,4 @@ const DetailWorks = () => {
 
 
 
-export default DetailWorks;
+export default DetailProject;

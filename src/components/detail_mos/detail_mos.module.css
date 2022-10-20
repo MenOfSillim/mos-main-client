@@ -1,8 +1,8 @@
 .detail {
-    height: 86.6vh;
-    background: url("../../../public/images/background_mos.png") no-repeat center;
+    height: 100%;
+    background: url("../../../public/images/background_mos.png") no-repeat center 30%;
     /* width: 100%; */
-    background-size: 110%;
+    background-size: 120%;
     display: flex;
   }
 
@@ -18,28 +18,28 @@
 .skinKellogg {
     background: url("../../../public/images/skins/intro_kellogg.PNG") no-repeat center;
     background-size: contain;
-    top: 30%;
+    top: 20%;
     left: 60%;
 }
 
 .skinRubok {
     background: url("../../../public/images/skins/intro_rubok.PNG") no-repeat center;
     background-size: contain;
-    top: 40%;
+    top: 30%;
     left: 30%;
 }
 
 .skinDavid {
     background: url("../../../public/images/skins/intro_david.PNG") no-repeat center;
     background-size: contain;
-    top: 60%;
+    top: 50%;
     left: 65%;
 }
 
 .skinLeo {
     background: url("../../../public/images/skins/intro_leo.PNG") no-repeat center;
     background-size: cover;
-    top: 60%;
+    top: 50%;
     left: 10%;
 }
 /* .description {
@@ -60,9 +60,9 @@
 /* Tablet */
 .taDetail {
     height: 86.6vh;
-    background: url("../../../public/images/background_mos.png") no-repeat center;
+    background: url("../../../public/images/background_mos.png") no-repeat center 30%;
     /* width: 100%; */
-    background-size: 140%;
+    background-size: 130%;
     display: flex;
 }
 
@@ -96,27 +96,27 @@
 .moSkinKellogg {
     background: url("../../../public/images/skins/intro_kellogg.PNG") no-repeat center;
     background-size: contain;
-    top: 40%;
+    top: 30%;
     left: 50%;
 }
 
 .moSkinRubok {
     background: url("../../../public/images/skins/intro_rubok.PNG") no-repeat center;
     background-size: contain;
-    top: 50%;
+    top: 40%;
     left: 30%;
 }
 
 .moSkinDavid {
     background: url("../../../public/images/skins/intro_david.PNG") no-repeat center;
     background-size: contain;
-    top: 60%;
+    top: 50%;
     left: 60%;
 }
 
 .moSkinLeo {
     background: url("../../../public/images/skins/intro_leo.PNG") no-repeat center;
     background-size: cover;
-    top: 55%;
+    top: 45%;
     left: 10%;
 }

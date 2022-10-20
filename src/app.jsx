@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import styles from "./app.module.css";
+import DetailAbout from './components/detail_about/detail_about';
 import DetailContact from './components/detail_contact/detail_contact';
 import DetailMos from './components/detail_mos/detail_mos';
-import DetailWorks from './components/detail_works/detail_works';
+import DetailProject from './components/detail_project/detail_project';
 import Header from './components/header/header';
 
 function App() {
@@ -17,12 +18,12 @@ function App() {
             element={<DetailMos className={styles.content}/>}
           ></Route>
           <Route
-            path="/mos"
-            element={<DetailMos className={styles.content} />}
+            path="/about"
+            element={<DetailAbout className={styles.content} />}
           ></Route>
           <Route
-            path="/works"
-            element={<DetailWorks className={styles.content} />}
+            path="/project"
+            element={<DetailProject className={styles.content} />}
           ></Route>
           <Route
             path="/contact"

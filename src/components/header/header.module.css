@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@800&display=swap');
-
 .header {
     display: flex;
     justify-content: space-between;
     font-family: 'Assistant', sans-serif;
+    font-weight: 800;
     align-items: center;
     height: 10vh;
     padding: 0.8em 1em;
     background: black;
     color: white;    
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logo {
@@ -28,8 +30,8 @@
 }
 
 .nav {
-    width: 500px;
-    margin-right: 3%;
+    width: 550px;
+    margin-right: 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -49,8 +51,8 @@
 }
 
 .taNav {
-    width: 350px;
-    margin-right: 5%;
+    width: 400px;
+    margin-right: 10%;
     display: flex;
     justify-content: space-between;
 }
@@ -72,7 +74,7 @@
 
 .moNav {
     width: 250px;
-    margin-right: 5%;
+    margin-right: 10%;
     display: flex;
     justify-content: space-between;
 }

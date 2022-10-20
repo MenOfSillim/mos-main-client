@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;800&display=swap');
+
 .app {
   height: 100vh;
   background-color: #CCD669;
+  /* overflow-x: hidden; */
+  /* overflow-y: scroll;  */
   /* min-width: 480px; */
   /* min-height: 320px; */
   /* background: url("../public/images/background_mos.png") no-repeat center;
