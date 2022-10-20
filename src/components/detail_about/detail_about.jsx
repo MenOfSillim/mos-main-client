@@ -12,7 +12,7 @@ const DetailAbout = () => {
                 <div className={styles.platforms}>
                     <div className={styles.title}>our PLATFORMS</div>
                     <div className={styles.iconContainer}>
-                        <div className={styles.icons}>
+                        <div className={styles.platformIcons}>
                             <div className={styles.iconSlack}></div>
                             <div className={styles.iconGithub}></div>
                             <div className={styles.iconConfluence}></div>
@@ -41,14 +41,45 @@ const DetailAbout = () => {
                             <div className={`${styles.subContent} ${styles.subTitleStack}`}>Front-end</div>
                             <div className={styles.iconContainer}>
                                 <div className={styles.icons}>
-                                    <div className={styles.iconSlack}></div>
-                                    <div className={styles.iconGithub}></div>
-                                    <div className={styles.iconConfluence}></div>
-                                    <div className={styles.iconJira}></div>
-                                    <div className={styles.iconDocker}></div>
+                                    <div className={`${styles.icon} ${styles.iconHtml}`}></div>
+                                    <div className={`${styles.icon} ${styles.iconCss}`}></div>
+                                    <div className={`${styles.icon} ${styles.iconJs}`}></div>
+                                    <div className={`${styles.icon} ${styles.iconReact}`}></div>
                                 </div>
                             </div>
                         </div>
+                        <div className={styles.subTechStack}>
+                            <div className={`${styles.subContent} ${styles.subTitleStack}`}>Back-end</div>
+                            <div className={styles.iconContainer}>
+                                <div className={styles.icons}>
+                                    <div className={`${styles.icon} ${styles.iconJava}`}></div>
+                                    <div className={`${styles.icon} ${styles.iconPython}`}></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.subTechStack}>
+                            <div className={`${styles.subContent} ${styles.subTitleStack}`}>Solutions</div>
+                            <div className={styles.iconContainer}>
+                                <div className={styles.icons}>
+                                    <div className={`${styles.icon} ${styles.iconKafka}`}></div>
+                                    <div className={`${styles.icon} ${styles.iconAirflow}`}></div>
+                                    <div className={`${styles.icon} ${styles.iconKeycloak}`}></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.subTechStack}>
+                            <div className={`${styles.subContent} ${styles.subTitleStack}`}>SCM</div>
+                            <div className={styles.iconContainer}>
+                                <div className={styles.icons}>
+                                    <div className={`${styles.icon} ${styles.iconDocker}`}></div>
+                                    <div className={`${styles.icon} ${styles.iconGithub}`}></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.aboutMore}>
+                        <div className={styles.title}>about our MEMBERS</div>
+                        <div className={styles.title}>about our HISTORY</div>
                     </div>
                 </div>    
             </div>
