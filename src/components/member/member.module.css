@@ -1,0 +1,6 @@
+.memberBox {
+    width: 80%;
+    margin: 5%;
+    border: 2px solid black;
+    display: flex;
+}

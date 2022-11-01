@@ -4,6 +4,7 @@ import styles from "./detail_about.module.css";
 const DetailAbout = () => {
     return (
         <div className={styles.detail}>
+            <img src="../../../public/images/background_mos.png"/>
             <div className={styles.container}>
                 <div className={styles.intro}>
                     <div className={styles.title}>what is the MOS</div>
