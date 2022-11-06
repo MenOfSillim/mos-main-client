@@ -4,3 +4,7 @@
     border: 2px solid black;
     display: flex;
 }
+
+.test {
+    background-image: url("../../../public/images/background_mos.png");
+}
