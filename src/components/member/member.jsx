@@ -23,12 +23,9 @@ const Member = ({ member }) => {
             <img className={styles.profileImg} src={url} alt="profile photo" />
           </div>
           <div className={styles.info}>
-            <h1 className={styles.nickName}>{nickName}</h1>
-            <p className={styles.lastName}>{lastName}</p>
-            <p className={styles.firstName}>{firstName}</p>
-            <p className={styles.emailAddress}>{emailAddress}</p>
-            <p className={styles.introduction}>{introduction}</p>
-            <p className={styles.description}>{description}</p>
+            <div className={styles.nickName}>{nickName}<span className={styles.name}>{firstName}{lastName}</span></div>
+            <div className={styles.emailAddress}>{emailAddress}</div>
+            <div className={styles.description}>{description}</div>
           </div>
         </div>
       );

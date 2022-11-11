@@ -23,7 +23,7 @@ function App() {
             element={<DetailAbout className={styles.content} />}
           ></Route>
           <Route
-            path="/member"
+            path="/about/members"
             element={<DetailMember className={styles.content} />}
           ></Route>
           <Route

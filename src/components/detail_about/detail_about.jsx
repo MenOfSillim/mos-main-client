@@ -2,6 +2,12 @@ import React from 'react';
 import styles from "./detail_about.module.css";
 
 const DetailAbout = () => {
+
+    const moveToUrl = (url) => {
+        console.log(`${url}`);
+        window.location.replace(`${url}`);
+    };
+
     return (
         <div className={styles.detail}>
             <img src="../../../public/images/background_mos.png"/>
@@ -79,7 +85,7 @@ const DetailAbout = () => {
                         </div>
                     </div>
                     <div className={styles.aboutMore}>
-                        <div className={styles.title}>about our MEMBERS</div>
+                        <div className={styles.title} onClick={()=>moveToUrl('/about/members')}>about our MEMBERS</div>
                         <div className={styles.title}>about our HISTORY</div>
                     </div>
                 </div>    
